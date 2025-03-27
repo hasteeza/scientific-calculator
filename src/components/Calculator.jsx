@@ -235,10 +235,10 @@ export default function Calculator() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="bg-gradient-to-tr from-gray-800 to-gray-900 p-6 rounded-2xl shadow-2xl border border-gray-700 w-full max-w-md transform transition-all duration-300">
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-4 mb-6 rounded-xl border border-gray-700 text-right shadow-inner">
-          <div className="text-xs text-gray-400 mb-1 flex justify-between">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-gray-900 to-blue-900">
+      <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl border border-white/20 w-full max-w-md transform transition-all duration-300">
+        <div className="bg-white/5 backdrop-blur-md p-4 mb-6 rounded-xl border border-white/10 text-right shadow-inner">
+          <div className="text-xs text-gray-300 mb-1 flex justify-between">
             <span>
               {memory !== null ? "M" : ""} {isRadianMode ? "RAD" : "DEG"}
             </span>
@@ -255,236 +255,236 @@ export default function Calculator() {
 
         <div className="grid grid-cols-5 gap-3">
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => memoryOperation("MC")}
           >
             MC
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => memoryOperation("MR")}
           >
             MR
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => memoryOperation("M+")}
           >
             M+
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => memoryOperation("M-")}
           >
             M-
           </Button>
           <Button
-            className="bg-red-700 hover:bg-red-600 text-white hover:text-red-100 transition-all duration-200"
+            className="bg-red-500/20 hover:bg-red-500/30 text-white hover:text-red-100 transition-all duration-200 backdrop-blur-sm border border-red-500/30"
             onClick={clearAll}
           >
             AC
           </Button>
 
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("sin")}
           >
             sin
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("cos")}
           >
             cos
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("tan")}
           >
             tan
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => constantPressed("π")}
           >
             π
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => constantPressed("e")}
           >
             e
           </Button>
 
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("log")}
           >
             log
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("ln")}
           >
             ln
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("exp")}
           >
             exp
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("factorial")}
           >
             x!
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={toggleMode}
           >
             {isRadianMode ? "RAD" : "DEG"}
           </Button>
 
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("square")}
           >
             x²
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => binaryOperationPressed("^")}
           >
             x^y
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("sqrt")}
           >
             √
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("reciprocal")}
           >
             1/x
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("percent")}
           >
             %
           </Button>
 
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("7")}
           >
             7
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("8")}
           >
             8
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("9")}
           >
             9
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={clearEntry}
           >
             CE
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => binaryOperationPressed("÷")}
           >
             ÷
           </Button>
 
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("4")}
           >
             4
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("5")}
           >
             5
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("6")}
           >
             6
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => unaryOperationPressed("negate")}
           >
             ±
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => binaryOperationPressed("×")}
           >
             ×
           </Button>
 
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("1")}
           >
             1
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("2")}
           >
             2
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed("3")}
           >
             3
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200 row-span-2"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10 row-span-2"
             onClick={equalsPressed}
           >
             =
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => binaryOperationPressed("-")}
           >
             -
           </Button>
 
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200 col-span-2"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10 col-span-2"
             onClick={() => digitPressed("0")}
           >
             0
           </Button>
           <Button
-            className="bg-gray-600 hover:bg-gray-500 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/20 hover:bg-white/30 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => digitPressed(".")}
           >
             .
           </Button>
           <Button
-            className="bg-gray-700 hover:bg-gray-600 text-white hover:text-blue-200 transition-all duration-200"
+            className="bg-white/10 hover:bg-white/20 text-white hover:text-blue-200 transition-all duration-200 backdrop-blur-sm border border-white/10"
             onClick={() => binaryOperationPressed("+")}
           >
             +
